@@ -42,11 +42,11 @@ from bs4 import BeautifulSoup, SoupStrainer
 import urllib
 from urllib import request
 from urllib import error
-from NLP import TextAnalysis as TA
+from TextAnalysis import * as TA
 import re
 
 
-class RawHtml(object):
+class RawHtml:
 
     def __init__(self, url, link_filters=None, text_filters=None):
         self.url = url
@@ -148,7 +148,7 @@ OVERLY COMPLICATED, UNREADABLE, ETC.
 """
 
 
-class CheckLinkQuality(object):
+class CheckLinkQuality:
 
     def __init__(self, link_list, link_stem, link_keywords=None):
         self.link_list = link_list
