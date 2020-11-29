@@ -42,7 +42,7 @@ from bs4 import BeautifulSoup, SoupStrainer
 import urllib
 from urllib import request
 from urllib import error
-from TextAnalysis import * as TA
+#from TextAnalysis import * as TA
 import re
 
 
